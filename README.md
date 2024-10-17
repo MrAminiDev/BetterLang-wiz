@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to BetterLang-wiz</h1>
 
   <br><br>
-  برای توضیحات <a href="https://github.com/MrAminiDev/NetOptix/blob/main/README-fa.md"> فارسی اینجا بزنید </a>
+  برای توضیحات <a href="https://github.com/MrAminiDev/BetterLang-wiz/blob/main/README-fa.md"> فارسی اینجا بزنید </a>
 
 
 # About BetterLang-wiz
