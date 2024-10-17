@@ -1,5 +1,9 @@
 <h1 align="center">Welcome to BetterLang-wiz</h1>
 
+  <br><br>
+  برای توضیحات <a href="https://github.com/MrAminiDev/NetOptix/blob/main/README-fa.md"> فارسی اینجا بزنید </a>
+
+
 # About BetterLang-wiz
 
 Welcome to the BetterLang-wiz project. This project includes a complete rewrite of the language files from the original WizWiz project, meticulously rewritten with great care and attention. In this version, the language texts have been replaced with literary sentences and phrases to provide a more pleasant and enriching experience for users when interacting with the WizWiz bot. My goal in creating BetterLang-wiz is to enhance the user experience and convey a better feeling through the use of more beautiful and fluent texts. We hope you enjoy these changes and find this project useful and engaging.
