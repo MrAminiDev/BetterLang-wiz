@@ -101,10 +101,11 @@ if($orders){
             $leftgb = round( ($totalLeft) / 1073741824, 2);
             if($expiryTime != null && $total != null && $expiryTime >= 0 && $notif == 0){
                 $send = "";
-                if($expiryTime < time() + 86400)  $send = "روز ⏳";  elseif($leftgb < 1) $send = "گیگ 💾";
+                if($expiryTime < time() + 86400) $send = "روز ⏳"; elseif($leftgb < 1) $send = "گیگ 💾";
                 if($send != ""){  
                     $msg = " 
-از سرویس اشتراک $remark تنها (۱ $send) باقی مانده است. ⏳ شما می‌توانید از بخش "خریدهای من" سرویس فعلی خود را تمدید کرده یا یک سرویس جدید خریداری نمایید. 🛍️";
+        از سرویس اشتراک $remark تنها (۱ $send) باقی مانده است. ⏳ شما می‌توانید از بخش خریدهای من سرویس فعلی خود را تمدید کرده یا یک سرویس جدید خریداری نمایید. 🛍️
+";
                     sendMessage( $msg, null, null, $from_id);
                     
                     $stmt = $connection->prepare("UPDATE `orders_list` SET `notif`= -1 WHERE `uuid`=?");
@@ -223,7 +224,8 @@ if($orders){
                 else{if($inbound_id > 0) $res = deleteClient($server_id, $inbound_id, $uuid, 1); else $res = deleteInbound($server_id, $uuid, 1); }
         		if(!is_null($res)){
                     $msg = "
-اشتراک سرویس $remark منقضی شد و از لیست سفارش‌ها حذف گردید. ⌛ لطفاً از فروشگاه سرویس جدید خریداری کنید. 🛒";
+    اشتراک سرویس $remark منقضی شد و از لیست سفارش‌ها حذف گردید. ⌛ لطفاً از فروشگاه سرویس جدید خریداری کنید. 🛒
+";
                     sendMessage( $msg, null, null, $from_id);
                     $stmt = $connection->prepare("DELETE FROM `orders_list` WHERE `uuid`=?");
                     $stmt->bind_param("s", $uuid);
